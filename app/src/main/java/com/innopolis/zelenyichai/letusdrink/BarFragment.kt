@@ -43,7 +43,7 @@ class BarFragment : Fragment() {
                     columnCount <= 1 -> LinearLayoutManager(context)
                     else -> GridLayoutManager(context, columnCount)
                 }
-                adapter = MyBarRecyclerViewAdapter(DummyContent.ITEMS, listener)
+                adapter = MyBarRecyclerViewAdapter(BarGenerator.generateBars(25), listener)
             }
         }
         return view
@@ -76,7 +76,7 @@ class BarFragment : Fragment() {
      */
     interface OnListFragmentInteractionListener {
         // TODO: Update argument type and name
-        fun onListFragmentInteraction(item: DummyItem?)
+        fun onListFragmentInteraction(item: BarModel?)
     }
 
     companion object {
