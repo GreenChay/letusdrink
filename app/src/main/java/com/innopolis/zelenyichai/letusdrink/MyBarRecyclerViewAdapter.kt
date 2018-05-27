@@ -4,7 +4,6 @@ import android.support.v7.widget.RecyclerView
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.TextView
 
 
 import com.innopolis.zelenyichai.letusdrink.BarFragment.OnListFragmentInteractionListener
@@ -12,11 +11,6 @@ import com.innopolis.zelenyichai.letusdrink.dummy.DummyContent.DummyItem
 
 import kotlinx.android.synthetic.main.fragment_bar.view.*
 
-/**
- * [RecyclerView.Adapter] that can display a [DummyItem] and makes a call to the
- * specified [OnListFragmentInteractionListener].
- * TODO: Replace the implementation with code for your data type.
- */
 class MyBarRecyclerViewAdapter(
         private val mValues: List<BarModel>,
         private val mListener: OnListFragmentInteractionListener?)
@@ -41,8 +35,8 @@ class MyBarRecyclerViewAdapter(
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         val item = mValues[position]
-        holder.barNameView.text = item.name
-        holder.barDescriptionView.text = item.description
+        //holder.barNameView.text = item.name
+        //holder.barDescriptionView.text = item.description
 
         with(holder.view) {
             tag = item
@@ -53,8 +47,8 @@ class MyBarRecyclerViewAdapter(
     override fun getItemCount(): Int = mValues.size
 
     inner class ViewHolder(val view: View) : RecyclerView.ViewHolder(view) {
-        val barNameView = view.tv_bar_name
-        val barDescriptionView = view.tv_bar_description
+        val barNameView = view.tv_bar_name_collapsed
+        val barDescriptionView = view.tv_bar_description_collapsed
 
 
         override fun toString(): String {

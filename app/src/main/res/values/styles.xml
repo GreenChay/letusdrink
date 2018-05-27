@@ -7,5 +7,8 @@
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
     </style>
-
+    <style name="RatingStyle" parent="Base.Widget.AppCompat.RatingBar.Small">
+        <item name="colorControlNormal">@color/star_yellow</item>
+        <item name="colorControlActivated">@color/star_yellow</item>
+    </style>
 </resources>

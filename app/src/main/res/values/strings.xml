@@ -2,4 +2,5 @@
     <string name="app_name">Let Us Drink</string>
     <string name="filler_short">Loren ipsum</string>
     <string name="filler_long">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut faucibus sit amet arcu ac dictum. Praesent id dictum justo. </string>
+    <string name="rouble_sign">₽</string>
 </resources>
