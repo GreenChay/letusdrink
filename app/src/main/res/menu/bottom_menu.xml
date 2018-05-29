@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/menu_home"
+        android:icon="@drawable/ic_round_home_24px"
+        android:title="@string/home" />
+    <item android:id="@+id/menu_search"
+        android:icon="@drawable/ic_round_search_24px"
+        android:title="@string/search" />
+    <item android:id="@+id/menu_assistant"
+        android:icon="@drawable/ic_round_chat_24px"
+        android:title="@string/assistant" />
+    <item android:id="@+id/menu_taxi"
+        android:icon="@drawable/ic_round_local_taxi_24px"
+        android:title="@string/taxi" />
+    <item android:id="@+id/menu_profile"
+        android:icon="@drawable/ic_round_person_24px"
+        android:title="@string/profile" />
+</menu>

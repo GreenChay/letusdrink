@@ -16,7 +16,7 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintBottom_toBottomOf="@id/guidline_bar_card_40"/>
+        app:layout_constraintBottom_toBottomOf="@id/guidline_bar_card_40" />
     <TextView
         android:id="@+id/tv_bar_name"
         android:layout_width="0dp"
