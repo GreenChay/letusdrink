@@ -1,4 +1,4 @@
-package com.innopolis.zelenyichai.letusdrink
+package com.innopolis.zelenyichai.letusdrink.Fragments
 
 import android.content.Context
 import android.os.Bundle
@@ -9,9 +9,11 @@ import android.support.v7.widget.RecyclerView
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import com.innopolis.zelenyichai.letusdrink.Util.BarGenerator
+import com.innopolis.zelenyichai.letusdrink.Models.BarModel
+import com.innopolis.zelenyichai.letusdrink.Adapters.MyBarRecyclerViewAdapter
+import com.innopolis.zelenyichai.letusdrink.R
 
-import com.innopolis.zelenyichai.letusdrink.dummy.DummyContent
-import com.innopolis.zelenyichai.letusdrink.dummy.DummyContent.DummyItem
 
 /**
  * A fragment representing a list of Items.

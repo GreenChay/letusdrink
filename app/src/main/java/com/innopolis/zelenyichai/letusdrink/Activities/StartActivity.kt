@@ -1,11 +1,12 @@
-package com.innopolis.zelenyichai.letusdrink
+package com.innopolis.zelenyichai.letusdrink.Activities
 
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.support.design.widget.BottomNavigationView
 import android.support.v7.app.ActionBar
-import android.widget.Toast
-import com.innopolis.zelenyichai.letusdrink.dummy.DummyContent
+import com.innopolis.zelenyichai.letusdrink.Fragments.BarFragment
+import com.innopolis.zelenyichai.letusdrink.Models.BarModel
+import com.innopolis.zelenyichai.letusdrink.R
 
 class StartActivity : AppCompatActivity(), BarFragment.OnListFragmentInteractionListener {
 

@@ -1,4 +1,4 @@
-package com.innopolis.zelenyichai.letusdrink
+package com.innopolis.zelenyichai.letusdrink.Adapters
 
 import android.support.v7.widget.RecyclerView
 import android.view.LayoutInflater
@@ -6,8 +6,9 @@ import android.view.View
 import android.view.ViewGroup
 
 
-import com.innopolis.zelenyichai.letusdrink.BarFragment.OnListFragmentInteractionListener
-import com.innopolis.zelenyichai.letusdrink.dummy.DummyContent.DummyItem
+import com.innopolis.zelenyichai.letusdrink.Fragments.BarFragment.OnListFragmentInteractionListener
+import com.innopolis.zelenyichai.letusdrink.Models.BarModel
+import com.innopolis.zelenyichai.letusdrink.R
 
 import kotlinx.android.synthetic.main.fragment_bar.view.*
 

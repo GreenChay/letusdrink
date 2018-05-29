@@ -1,4 +1,6 @@
-package com.innopolis.zelenyichai.letusdrink
+package com.innopolis.zelenyichai.letusdrink.Util
+
+import com.innopolis.zelenyichai.letusdrink.Models.BarModel
 
 object BarGenerator {
     fun generateBars(count: Int): List<BarModel>{
