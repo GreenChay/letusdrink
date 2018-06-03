@@ -10,7 +10,7 @@ import com.innopolis.zelenyichai.letusdrink.Fragments.BarFragment.OnListFragment
 import com.innopolis.zelenyichai.letusdrink.Models.BarModel
 import com.innopolis.zelenyichai.letusdrink.R
 
-import kotlinx.android.synthetic.main.fragment_bar.view.*
+import kotlinx.android.synthetic.main.fragment_bar_collapsed.view.*
 
 class MyBarRecyclerViewAdapter(
         private val mValues: List<BarModel>,
@@ -30,7 +30,7 @@ class MyBarRecyclerViewAdapter(
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
         val view = LayoutInflater.from(parent.context)
-                .inflate(R.layout.fragment_bar, parent, false)
+                .inflate(R.layout.fragment_bar_collapsed, parent, false)
         return ViewHolder(view)
     }
 

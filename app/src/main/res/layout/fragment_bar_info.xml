@@ -1,0 +1,391 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <android.support.constraint.Guideline
+            android:id="@+id/guideline_vertical_16dp_left"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            app:layout_constraintGuide_begin="16dp" />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/guideline_vertical_72dp_left"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            app:layout_constraintGuide_begin="72dp" />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/guideline_vertical_16dp_right"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            app:layout_constraintGuide_end="16dp" />
+
+        <TextView
+            android:id="@+id/tv_bar_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/filler_short"
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintLeft_toLeftOf="@id/guideline_vertical_16dp_left"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <RatingBar
+            android:id="@+id/rating_bar_bar"
+            style="@style/Base.Widget.AppCompat.RatingBar.Small"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_marginTop="12dp"
+            android:rating="3.5"
+            app:layout_constraintBottom_toBottomOf="@id/tv_bar_name"
+            app:layout_constraintRight_toLeftOf="@id/guideline_vertical_16dp_right"
+            app:layout_constraintTop_toTopOf="@id/tv_bar_name" />
+
+        <TextView
+            android:id="@+id/tv_bar_address"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Kazan, Spartakovskaya 6/1, 1 floor"
+            android:textColor="@color/darker_gray"
+            android:textSize="12sp"
+            app:layout_constraintLeft_toLeftOf="@id/guideline_vertical_16dp_left"
+            app:layout_constraintRight_toRightOf="@id/guideline_vertical_16dp_right"
+            app:layout_constraintTop_toBottomOf="@id/tv_bar_name" />
+
+        <TextView
+            android:id="@+id/tv_bar_description"
+            android:layout_width="0dp"
+            android:layout_height="64dp"
+            android:layout_marginVertical="@dimen/margin_inside"
+            android:gravity="bottom"
+            android:text="@string/filler_long"
+            android:textSize="14sp"
+            app:layout_constraintLeft_toLeftOf="@id/guideline_vertical_16dp_left"
+            app:layout_constraintRight_toRightOf="@id/guideline_vertical_16dp_right"
+            app:layout_constraintTop_toBottomOf="@id/tv_bar_address" />
+
+        <TextView
+            android:id="@+id/tv_rouble"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/rouble_sign"
+            android:textColor="@color/colorAccent"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_marginHorizontal="@dimen/margin_inside"
+            app:layout_constraintLeft_toLeftOf="@id/guideline_vertical_16dp_left"
+            app:layout_constraintTop_toBottomOf="@id/tv_bar_description" />
+
+        <TextView
+            android:id="@+id/tv_avg_check"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginHorizontal="@dimen/margin_inside"
+            android:gravity="center"
+            android:text="Average check - 1500 rub."
+            android:textSize="14sp"
+            app:layout_constraintTop_toBottomOf="@id/tv_bar_description"
+            app:layout_constraintLeft_toRightOf="@id/tv_rouble"
+
+            />
+
+        <View
+            android:id="@+id/divider_bar_description"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginVertical="@dimen/margin_inside"
+            android:background="@color/lighter_gray"
+            app:layout_constraintTop_toBottomOf="@id/tv_rouble" />
+
+        <TextView
+            android:id="@+id/tv_bar_tags"
+            android:layout_width="0dp"
+            android:layout_height="64dp"
+            android:layout_marginVertical="@dimen/margin_inside"
+            android:gravity="center"
+            android:text="TAGS"
+            android:textAlignment="center"
+            android:textSize="32sp"
+            app:layout_constraintLeft_toLeftOf="@id/guideline_vertical_16dp_left"
+            app:layout_constraintRight_toRightOf="@id/guideline_vertical_16dp_right"
+            app:layout_constraintTop_toBottomOf="@id/divider_bar_description" />
+
+
+        <View
+            android:id="@+id/divider_bar_tags"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginVertical="@dimen/margin_inside"
+            android:background="@color/lighter_gray"
+            app:layout_constraintTop_toBottomOf="@id/tv_bar_tags" />
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/layout_timetable"
+            android:layout_width="0dp"
+            android:layout_height="200dp"
+            android:layout_marginVertical="@dimen/margin_inside"
+            app:layout_constraintLeft_toLeftOf="@id/guideline_vertical_16dp_left"
+            app:layout_constraintRight_toRightOf="@id/guideline_vertical_16dp_right"
+            app:layout_constraintTop_toBottomOf="@id/divider_bar_tags">
+
+            <TextView
+                android:id="@+id/tv_monday"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:gravity="center"
+                android:text="@string/monday"
+                android:textAlignment="center"
+                app:layout_constraintBottom_toTopOf="@id/tv_tuesday"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toLeftOf="@id/tv_monday_time"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tv_tuesday"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:gravity="center"
+                android:text="@string/tuesday"
+                android:textAlignment="center"
+                app:layout_constraintBottom_toTopOf="@id/tv_wednesday"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toLeftOf="@id/tv_monday_time"
+                app:layout_constraintTop_toBottomOf="@id/tv_monday" />
+
+            <TextView
+                android:id="@+id/tv_wednesday"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:gravity="center"
+                android:text="@string/wednesday"
+                android:textAlignment="center"
+                app:layout_constraintBottom_toTopOf="@id/tv_thursday"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toLeftOf="@id/tv_monday_time"
+                app:layout_constraintTop_toBottomOf="@id/tv_tuesday" />
+
+            <TextView
+                android:id="@+id/tv_thursday"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:gravity="center"
+                android:text="@string/thursday"
+                android:textAlignment="center"
+                app:layout_constraintBottom_toTopOf="@id/tv_friday"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toLeftOf="@id/tv_monday_time"
+                app:layout_constraintTop_toBottomOf="@id/tv_wednesday" />
+
+            <TextView
+                android:id="@+id/tv_friday"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:gravity="center"
+                android:text="@string/friday"
+                android:textAlignment="center"
+                app:layout_constraintBottom_toTopOf="@id/tv_saturday"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toLeftOf="@id/tv_monday_time"
+                app:layout_constraintTop_toBottomOf="@id/tv_thursday" />
+
+            <TextView
+                android:id="@+id/tv_saturday"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:gravity="center"
+                android:text="@string/saturday"
+                android:textAlignment="center"
+                app:layout_constraintBottom_toTopOf="@id/tv_sunday"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toLeftOf="@id/tv_monday_time"
+                app:layout_constraintTop_toBottomOf="@id/tv_friday" />
+
+            <TextView
+                android:id="@+id/tv_sunday"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:gravity="center"
+                android:text="@string/sunday"
+                android:textAlignment="center"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toLeftOf="@id/tv_monday_time"
+                app:layout_constraintTop_toBottomOf="@id/tv_saturday" />
+
+            <TextView
+                android:id="@+id/tv_monday_time"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:gravity="center"
+                android:text="@string/open_hours_example"
+                android:textAlignment="center"
+                app:layout_constraintBottom_toBottomOf="@id/tv_monday"
+                app:layout_constraintLeft_toRightOf="@id/tv_monday"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="@id/tv_monday" />
+
+            <TextView
+                android:id="@+id/tv_tuesday_time"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:gravity="center"
+                android:text="@string/open_hours_example"
+                android:textAlignment="center"
+                app:layout_constraintBottom_toBottomOf="@id/tv_tuesday"
+                app:layout_constraintLeft_toRightOf="@id/tv_tuesday"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="@id/tv_tuesday" />
+
+            <TextView
+                android:id="@+id/tv_wednesday_time"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:gravity="center"
+                android:text="@string/open_hours_example"
+                android:textAlignment="center"
+                app:layout_constraintBottom_toBottomOf="@id/tv_wednesday"
+                app:layout_constraintLeft_toRightOf="@id/tv_wednesday"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="@id/tv_wednesday" />
+
+            <TextView
+                android:id="@+id/tv_thursday_time"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:gravity="center"
+                android:text="@string/open_hours_example"
+                android:textAlignment="center"
+                app:layout_constraintBottom_toBottomOf="@id/tv_thursday"
+                app:layout_constraintLeft_toRightOf="@id/tv_thursday"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="@id/tv_thursday" />
+
+            <TextView
+                android:id="@+id/tv_friday_time"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:gravity="center"
+                android:text="@string/open_hours_example"
+                android:textAlignment="center"
+                app:layout_constraintBottom_toBottomOf="@id/tv_friday"
+                app:layout_constraintLeft_toRightOf="@id/tv_friday"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="@id/tv_friday" />
+
+            <TextView
+                android:id="@+id/tv_saturday_time"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:gravity="center"
+                android:text="@string/open_hours_example"
+                android:textAlignment="center"
+                app:layout_constraintBottom_toBottomOf="@id/tv_saturday"
+                app:layout_constraintLeft_toRightOf="@id/tv_saturday"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="@id/tv_saturday" />
+
+            <TextView
+                android:id="@+id/tv_sunday_time"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:gravity="center"
+                android:text="@string/open_hours_example"
+                android:textAlignment="center"
+                app:layout_constraintBottom_toBottomOf="@id/tv_sunday"
+                app:layout_constraintLeft_toRightOf="@id/tv_sunday"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="@id/tv_sunday" />
+
+        </android.support.constraint.ConstraintLayout>
+
+
+        <View
+            android:id="@+id/divider_bar_timetable"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginVertical="@dimen/margin_inside"
+            android:background="@color/lighter_gray"
+            app:layout_constraintTop_toBottomOf="@id/layout_timetable" />
+
+        <TextView
+            android:id="@+id/tv_bar_phone"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="@dimen/margin_inside"
+            android:text="@string/phone_sample"
+            android:textColor="@color/colorPrimary"
+            android:textSize="20sp"
+            android:textStyle="bold"
+
+            app:layout_constraintTop_toTopOf="@id/divider_bar_timetable"
+            app:layout_constraintLeft_toLeftOf="@id/guideline_vertical_16dp_left"
+            app:layout_constraintRight_toRightOf="@id/guideline_vertical_16dp_right"/>
+
+        <TextView
+            android:id="@+id/tv_bar_website"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="@dimen/margin_inside"
+            android:text="@string/website_sample"
+            android:textColor="@color/colorPrimary"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintTop_toBottomOf="@id/tv_bar_phone"
+            app:layout_constraintLeft_toLeftOf="@id/guideline_vertical_16dp_left"
+            app:layout_constraintRight_toRightOf="@id/guideline_vertical_16dp_right"/>
+
+        <View
+            android:id="@+id/divider_bar_contacts"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginVertical="@dimen/margin_inside"
+            android:background="@color/lighter_gray"
+            app:layout_constraintTop_toBottomOf="@id/tv_bar_website" />
+
+        <Button
+            android:id="@+id/btn_bar_open_on_map"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_inside"
+            app:layout_constraintTop_toTopOf="@id/divider_bar_contacts"
+            app:layout_constraintLeft_toLeftOf="@id/guideline_vertical_16dp_left"
+            app:layout_constraintRight_toLeftOf="@id/btn_bar_call_taxi"
+            android:text="Open in Maps"
+            android:textSize="16dp"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:background="@drawable/round_button"
+            />
+        <Button
+            android:id="@+id/btn_bar_call_taxi"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_inside"
+            app:layout_constraintLeft_toRightOf="@id/btn_bar_open_on_map"
+            app:layout_constraintRight_toRightOf="@id/guideline_vertical_16dp_right"
+            app:layout_constraintTop_toTopOf="@id/divider_bar_contacts"
+            android:text="Call a Taxi"
+            android:textSize="16dp"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:background="@drawable/round_button"/>
+
+
+
+    </android.support.constraint.ConstraintLayout>
+</ScrollView>
